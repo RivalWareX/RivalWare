@@ -1,0 +1,330 @@
+on = true
+distance = 6 -- You can edit this to however long you want your reach
+
+starterGui = game:GetService("StarterGui")
+plr = game:GetService("Players").LocalPlayer
+
+
+function try1()
+        game:GetService("RunService").RenderStepped:connect(
+            function()
+        	if on then
+        		local hum = plr.Character.Humanoid
+        		for _, v in ipairs(game.Players:GetPlayers()) do
+        			if v.Name ~= plr.Name then
+        				local s, e =
+                                pcall(
+                                function()
+        					local root = v.Character["Right Leg"]
+        					local root2 = v.Character["Left Leg"]
+        					local root3 = v.Character["Right Arm"]
+        					local root4 = v.Character["Left Arm"]
+        					local root5 = v.Character.Head
+        					local root6 = v.Character.Torso
+        					local root7 = v.Character.HumanoidRootPart
+        					local root8 = v.Character.PrimaryPart
+        					local sword = hum.Parent:FindFirstChildOfClass("Tool")
+        					if sword and (root.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= distance then
+        					    if root6.Transparency ~= 1 then
+                					        firetouchinterest(sword.Handle, root, 1)
+        									firetouchinterest(sword.Handle, root, 0)
+        									firetouchinterest(sword.Handle, root2, 1)
+        									firetouchinterest(sword.Handle, root2, 0)
+        									firetouchinterest(sword.Handle, root3, 1)
+        									firetouchinterest(sword.Handle, root3, 0)
+        									firetouchinterest(sword.Handle, root4, 1)
+        									firetouchinterest(sword.Handle, root4, 0)
+        									firetouchinterest(sword.Handle, root5, 1)
+        									firetouchinterest(sword.Handle, root5, 0)
+        									firetouchinterest(sword.Handle, root6, 1)
+        									firetouchinterest(sword.Handle, root6, 0)
+        									firetouchinterest(sword.Handle, root7, 1)
+        									firetouchinterest(sword.Handle, root7, 0)
+        									firetouchinterest(sword.Handle, root8, 1)
+        									firetouchinterest(sword.Handle, root8, 0)
+        									print("c")
+        					    end
+        				    end
+        				end
+                            )
+        			end
+        		end
+        	end
+        end
+        )
+        coroutine.yield()
+end
+
+function try2()
+        game:GetService("RunService").RenderStepped:connect(
+            function()
+        	if on then
+        		local hum = plr.Character.Humanoid
+        		for _, v in ipairs(game.Players:GetPlayers()) do
+        			if v.Name ~= plr.Name then
+        				local s, e =
+                                pcall(
+                                function()
+        					local root = v.Character["Right Leg"]
+        					local root2 = v.Character["Left Leg"]
+        					local root3 = v.Character["Right Arm"]
+        					local root4 = v.Character["Left Arm"]
+        					local root5 = v.Character.Head
+        					local root6 = v.Character.Torso
+        					local root7 = v.Character.HumanoidRootPart
+        					local root8 = v.Character.PrimaryPart
+        					local sword = hum.Parent:FindFirstChildOfClass("Tool")
+        					if sword and (root.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= distance then
+        					    if root6.Transparency ~= 1 then
+                					        firetouchinterest(sword.Handle, root, 1)
+        									firetouchinterest(sword.Handle, root, 0)
+        									firetouchinterest(sword.Handle, root2, 1)
+        									firetouchinterest(sword.Handle, root2, 0)
+        									firetouchinterest(sword.Handle, root3, 1)
+        									firetouchinterest(sword.Handle, root3, 0)
+        									firetouchinterest(sword.Handle, root4, 1)
+        									firetouchinterest(sword.Handle, root4, 0)
+        									firetouchinterest(sword.Handle, root5, 1)
+        									firetouchinterest(sword.Handle, root5, 0)
+        									firetouchinterest(sword.Handle, root6, 1)
+        									firetouchinterest(sword.Handle, root6, 0)
+        									firetouchinterest(sword.Handle, root7, 1)
+        									firetouchinterest(sword.Handle, root7, 0)
+        									firetouchinterest(sword.Handle, root8, 1)
+        									firetouchinterest(sword.Handle, root8, 0)
+        									print("b")
+        						
+        					    end
+        				    end
+        				end
+                            )
+        			end
+        		end
+        	end
+        end
+        )
+        coroutine.yield()
+end
+
+function try3()
+        game:GetService("RunService").RenderStepped:connect(
+            function()
+        	if on then
+        		local hum = plr.Character.Humanoid
+        		for _, v in ipairs(game.Players:GetPlayers()) do
+        			if v.Name ~= plr.Name then
+        				local s, e =
+                                pcall(
+                                function()
+        					local root = v.Character["Right Leg"]
+        					local root2 = v.Character["Left Leg"]
+        					local root3 = v.Character["Right Arm"]
+        					local root4 = v.Character["Left Arm"]
+        					local root5 = v.Character.Head
+        					local root6 = v.Character.Torso
+        					local root7 = v.Character.HumanoidRootPart
+        					local root8 = v.Character.PrimaryPart
+        					local sword = hum.Parent:FindFirstChildOfClass("Tool")
+        					if sword and (root.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= distance then
+        					    if root6.Transparency ~= 1 then
+                					        firetouchinterest(sword.Handle, root, 1)
+        									firetouchinterest(sword.Handle, root, 0)
+        									firetouchinterest(sword.Handle, root2, 1)
+        									firetouchinterest(sword.Handle, root2, 0)
+        									firetouchinterest(sword.Handle, root3, 1)
+        									firetouchinterest(sword.Handle, root3, 0)
+        									firetouchinterest(sword.Handle, root4, 1)
+        									firetouchinterest(sword.Handle, root4, 0)
+        									firetouchinterest(sword.Handle, root5, 1)
+        									firetouchinterest(sword.Handle, root5, 0)
+        									firetouchinterest(sword.Handle, root6, 1)
+        									firetouchinterest(sword.Handle, root6, 0)
+        									firetouchinterest(sword.Handle, root7, 1)
+        									firetouchinterest(sword.Handle, root7, 0)
+        									firetouchinterest(sword.Handle, root8, 1)
+        									firetouchinterest(sword.Handle, root8, 0)
+        									print("a")
+        						
+        					    end
+        				    end
+        				end
+                            )
+        			end
+        		end
+        	end
+        end
+        )
+        coroutine.yield()
+end
+
+function try4()
+        game:GetService("RunService").RenderStepped:connect(
+            function()
+        	if on then
+        		local hum = plr.Character.Humanoid
+        		for _, v in ipairs(game.Players:GetPlayers()) do
+        			if v.Name ~= plr.Name then
+        				local s, e =
+                                pcall(
+                                function()
+        					local root = v.Character["Right Leg"]
+        					local root2 = v.Character["Left Leg"]
+        					local root3 = v.Character["Right Arm"]
+        					local root4 = v.Character["Left Arm"]
+        					local root5 = v.Character.Head
+        					local root6 = v.Character.Torso
+        					local root7 = v.Character.HumanoidRootPart
+        					local root8 = v.Character.PrimaryPart
+        					local sword = hum.Parent:FindFirstChildOfClass("Tool")
+        					if sword and (root.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= distance then
+        					    if root6.Transparency ~= 1 then
+                					        firetouchinterest(sword.Handle, root, 1)
+        									firetouchinterest(sword.Handle, root, 0)
+        									firetouchinterest(sword.Handle, root2, 1)
+        									firetouchinterest(sword.Handle, root2, 0)
+        									firetouchinterest(sword.Handle, root3, 1)
+        									firetouchinterest(sword.Handle, root3, 0)
+        									firetouchinterest(sword.Handle, root4, 1)
+        									firetouchinterest(sword.Handle, root4, 0)
+        									firetouchinterest(sword.Handle, root5, 1)
+        									firetouchinterest(sword.Handle, root5, 0)
+        									firetouchinterest(sword.Handle, root6, 1)
+        									firetouchinterest(sword.Handle, root6, 0)
+        									firetouchinterest(sword.Handle, root7, 1)
+        									firetouchinterest(sword.Handle, root7, 0)
+        									firetouchinterest(sword.Handle, root8, 1)
+        									firetouchinterest(sword.Handle, root8, 0)
+        									print("a")
+        						
+        					    end
+        				    end
+        				end
+                            )
+        			end
+        		end
+        	end
+        end
+        )
+        coroutine.yield()
+end
+
+
+function try5()
+        game:GetService("RunService").RenderStepped:connect(
+            function()
+        	if on then
+        		local hum = plr.Character.Humanoid
+        		for _, v in ipairs(game.Players:GetPlayers()) do
+        			if v.Name ~= plr.Name then
+        				local s, e =
+                                pcall(
+                                function()
+        					local root = v.Character["Right Leg"]
+        					local root2 = v.Character["Left Leg"]
+        					local root3 = v.Character["Right Arm"]
+        					local root4 = v.Character["Left Arm"]
+        					local root5 = v.Character.Head
+        					local root6 = v.Character.Torso
+        					local root7 = v.Character.HumanoidRootPart
+        					local root8 = v.Character.PrimaryPart
+        					local sword = hum.Parent:FindFirstChildOfClass("Tool")
+        					if sword and (root.Position - plr.Character.HumanoidRootPart.Position).Magnitude <= distance then
+        					    if root6.Transparency ~= 1 then
+                					        firetouchinterest(sword.Handle, root, 1)
+        									firetouchinterest(sword.Handle, root, 0)
+        									firetouchinterest(sword.Handle, root2, 1)
+        									firetouchinterest(sword.Handle, root2, 0)
+        									firetouchinterest(sword.Handle, root3, 1)
+        									firetouchinterest(sword.Handle, root3, 0)
+        									firetouchinterest(sword.Handle, root4, 1)
+        									firetouchinterest(sword.Handle, root4, 0)
+        									firetouchinterest(sword.Handle, root5, 1)
+        									firetouchinterest(sword.Handle, root5, 0)
+        									firetouchinterest(sword.Handle, root6, 1)
+        									firetouchinterest(sword.Handle, root6, 0)
+        									firetouchinterest(sword.Handle, root7, 1)
+        									firetouchinterest(sword.Handle, root7, 0)
+        									firetouchinterest(sword.Handle, root8, 1)
+        									firetouchinterest(sword.Handle, root8, 0)
+        									print("a")
+        						
+        					    end
+        				    end
+        				end
+                            )
+        			end
+        		end
+        	end
+        end
+        )
+        coroutine.yield()
+end
+
+
+local co1 = coroutine.create(try1)
+local co2 = coroutine.create(try2)
+local co3 = coroutine.create(try3)
+local co4 = coroutine.create(try4)
+local co5 = coroutine.create(try5)
+
+game:GetService("RunService").RenderStepped:connect(function()
+	coroutine.resume(co1)
+	--[[
+	coroutine.resume(co2)
+    coroutine.resume(co3)
+	coroutine.resume(co4)
+	coroutine.resume(co5)]]
+	game:GetService("RunService").RenderStepped:wait()
+end)
+
+
+    
+
+local is_on = function()
+	return on and "on" or "off"
+end
+
+local mouse = plr:GetMouse()
+mouse.KeyDown:connect(
+    function(key)
+	if key == "q" then
+		on = not on
+	elseif key == "t" then
+		local status = is_on()
+		starterGui:SetCore(
+                "SendNotification",
+                {
+			Title = "RivalWare",
+			Text = "Reach Status " .. status .. ". Current: " .. distance .. " Reach"
+		}
+            )
+	elseif key == "j" then
+		distance = distance + 1
+		starterGui:SetCore(
+                "SendNotification",
+                {
+			Title = "RivalWare",
+			Text = "Reach has increased by 1. Current: " .. distance .. " CPS"
+		}
+            )
+	elseif key == "k" then
+		if distance > 1 then
+			distance = distance - 1
+			starterGui:SetCore(
+                    "SendNotification",
+                    {
+				Title = "RivalWare",
+				Text = "Reach has decreased by 1. Current: " .. distance .. " CPS"
+			}
+                )
+		else
+			starterGui:SetCore("SendNotification", {
+				Title = "RivalWare",
+				Text = "Cannot decrease any further!"
+			})
+		end
+	end
+end
+)
+    
+
